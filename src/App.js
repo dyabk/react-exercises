@@ -8,15 +8,15 @@ const Header = (props) => (
 
 const Content = (props) => (
   <div>
-    <p>
-      {props.string1} {props.number1}
-    </p>
-    <p>
-      {props.string2} {props.number2}
-    </p>
-    <p>
-      {props.string3} {props.number3}
-    </p>
+    <Part title={props.string1} number={props.number1} />
+    <Part title={props.string2} number={props.number2} /> 
+    <Part title={props.string3} number={props.number3} /> 
+  </div>
+)
+
+const Part = (props) => (
+  <div>
+    <p>{props.title} {props.number}</p>
   </div>
 )
 
